@@ -23,15 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-// $config['base_url'] = 'http://localhost/project-rental/';
-$domain =  $_SERVER['HTTP_HOST'] .
-        str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
-
-if (!empty($_SERVER['HTTPS'])) {
-    $config['base_url'] = 'https://' . $domain;
-} else {
-    $config['base_url'] = 'http://' . $domain;
-}
+$config['base_url'] = 'http://localhost/ci_pr02_rental/';
 /*
 |--------------------------------------------------------------------------
 | Index File
